@@ -231,7 +231,7 @@ class Map(object):
     def opening_scene(self):
         return self.next_scene(self.start_scene)
 
-import rpg_battle.py
+#import rpg_battle.py
 
 
 a_map = Map('central_corridor')
