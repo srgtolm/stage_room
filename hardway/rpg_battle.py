@@ -161,7 +161,7 @@ def enemy_strike():
 initiateE = Enemy()
 initiateP = Player()
 body_enemy = initiateE.opponent()
-body_player =initiateP.warrior()
+body_player = initiateP.warrior()
 #print body_enemy
 
 mortal_kombat()

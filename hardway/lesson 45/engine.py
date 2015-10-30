@@ -4,6 +4,7 @@ __author__ = 'srgtolm'
 'Basic imports'
 from random import randint
 from sys import exit
+
 '______________________'
 
 'Import modules of game'
@@ -15,6 +16,7 @@ from room_basement import *
 from room_traktir import *
 from room_other import *
 from stats import *
+
 '______________________'
 
 'Code starts here'
@@ -61,7 +63,7 @@ class Map(object):
         return val
 
     def opening_scene(self):
-        #print self.next_scene(self.start_scene)
+        #print self.next_scene(self.start_scene)2
         return self.next_scene(self.start_scene)
 
 game_map = Map('zala')

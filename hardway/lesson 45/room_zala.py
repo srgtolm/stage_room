@@ -2,13 +2,18 @@ __author__ = 'srgtolm'
 
 import os
 from stats import *
+from room_traktir import increase
+from room_traktir import status
+
+#print param(0,0)
 
 class Zala(object):
     def enter(self):
+        increase(self)
         print "You are in central Zala"
         print "Peacefuly place to take a rest"
         print "Make a decision what to do next"
-        print "Money - %d, Life - %d" % (param()[0], param()[1])
+        print "Money - %d, Life - %d, Bank - %d" % (param(0,0)[0], param(0,0)[1], status(self))
         print "You can choose: "
         print "1. Move to CAVE"
         print "2. Move to STORAGE"
@@ -20,7 +25,7 @@ class Zala(object):
         while decision == False:
             if action == "1" or action == "cave" or action == "CAVE":
                 return "peshera"
-                print "LUCK"
+                print "1"
                 decision = True
             elif action == "2" or action == "storage" or action == "STORAGE":
                 return "sklad"
